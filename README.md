@@ -4,7 +4,7 @@ Testing Completed
 Cross-browser/device testing:
 -----------------------------
 Exploratory testing was completed on the folowing browsers: Chrome (latest), Firefox (latest), Safari (latest).
-As the site does not work correctly below 991px width (defect raised separately) I decided it was not prudent to spend time testing on devices until this issue was resolved. Should that defect be resolved further device testing will then be required.
+As the site does not work correctly below 992px width (defect raised separately) I decided it was not prudent to spend time testing on devices until this issue was resolved. Should that defect be resolved further device testing will then be required.
 
 Accessibility testing:
 ----------------------
