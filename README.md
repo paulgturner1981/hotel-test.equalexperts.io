@@ -10,7 +10,7 @@ As the site does not work correctly below 992px width (defect raised separately)
 
 API testing:
 -----------
-I used Postman to test API calls to create and delete bookings. I have attached the Postman collection to the project.
+I used Postman to test API calls to create and delete bookings. I was able to successfully add bookings to the site, but when I tried to delete bookings via a DELETE I got a 403 forbidden. I have attached the Postman collection to the project.
 
 Accessibility testing:
 ----------------------
