@@ -8,6 +8,10 @@ As this is a single-page app with limited functionality I decided to focus my se
 
 As the site does not work correctly below 992px width (defect raised separately) I decided it was not prudent to spend time testing on devices until this issue was resolved. Should that defect be resolved further device testing will then be required.
 
+API testing:
+-----------
+I used Postman to test API calls to create and delete bookings. I have attached the Postman collection to the project.
+
 Accessibility testing:
 ----------------------
 Manual testing of keyboard tabbing and voiceover.
