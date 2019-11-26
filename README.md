@@ -20,4 +20,10 @@ Performance testing:
 As this is a shared live site I decided it would not be sensible to run load testing against the site.
 I did however run Lighthouse performance tests and have attached the results to this project.
 
+Automated tests:
+----------------
+Automated tests were written using Selenium Nightwatch. There are tests which cover checking page elements, creating a booking, and deleting a booking.
+
+Defects:
+--------
 All defects discovered thus far in my testing have been consolidated in the attached Defect Report. 
