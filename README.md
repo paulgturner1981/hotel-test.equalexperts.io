@@ -24,7 +24,7 @@ I also completed manual testing of keyboard-tabbing and voiceover functionality.
 
 Security testing:
 -----------------
-I used OSAWP ZAP to complete a security scan. The results of the scan are attached to the project. The defects discovered have also been added to the attached defect report.
+I used OSAWP ZAP to complete a security scan. The results of the scan are attached to the project (Zaproxy_report.xml). The defects discovered have also been added to the attached defect report.
 
 Performance testing:
 -------------------
