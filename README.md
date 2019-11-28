@@ -8,6 +8,11 @@ As this is a single-page app with limited functionality I decided to focus my se
 
 As the site does not work correctly below 992px width (defect raised separately) I decided it was not prudent to spend time testing on devices until this issue was resolved. Should that defect be resolved further device testing will then be required.
 
+Automated tests:
+----------------
+Automated tests were written using Cypress. There is just one test at the moment which creates and then deletes a hotel booking.
+
+
 API testing:
 -----------
 I used Postman to test API calls to create and delete bookings. I was able to successfully add bookings to the site, but when I tried to delete bookings via a DELETE I got a 403 forbidden. I have attached the Postman collection to the project.
@@ -25,10 +30,6 @@ Performance testing:
 -------------------
 As this is a shared live site I decided it would not be sensible to run load testing against the site.
 I did however run Lighthouse performance tests and have attached the results to this project.
-
-Automated tests:
-----------------
-Automated tests were written using Selenium Nightwatch. There are tests which cover checking page elements, creating a booking, and deleting a booking.
 
 Defects:
 --------
