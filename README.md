@@ -10,27 +10,26 @@ As the site does not work correctly below 992px width (defect raised separately)
 
 Automated tests:
 ----------------
-Automated tests were written using Cypress. There is just one test at the moment which creates and then deletes a hotel booking.
+During my manual testing I did not raise any defects specific to a single browser. As such I felt that cross-browser automated testing in this particular use-case was not high priority. This led me to choose Cypress over Nightwatch. There is just one happy path test at the moment which creates a booking, checks it has been created, and then deletes that booking. Initially I had split this out into two separate tests, but as the data on the site is constantly changing (as others use it), I felt running both tests synchronously would provide a less brittle test as it would reduce the chance of someone deleting my booking.
 
+In order to run the tests please ensure you have Cypress installed and clone the repo.
 
 API testing:
 -----------
-I used Postman to test API calls to create and delete bookings. I was able to successfully add bookings to the site, but when I tried to delete bookings via a DELETE I got a 403 forbidden. I have attached the Postman collection to the project.
+I also used Postman to test API calls to create and delete bookings. I was able to successfully add bookings to the site, but when I tried to delete bookings via a DELETE I got a 403 forbidden. I have attached the Postman collection to the project.
 
 Accessibility testing:
 ----------------------
-Manual testing of keyboard tabbing and voiceover.
-Also ran an "Axe" test, an "Accessibility Insights for Web" test, and a "Lighthouse" accessibiilty test.
+I also completed manual testing of keyboard-tabbing and voiceover functionality. I then ran an "Axe" test, an "Accessibility Insights for Web" test, and a "Lighthouse" accessibiilty test. The defects foind as a result of this testing are included in the defect report.
 
 Security testing:
 -----------------
-I used OSAWP ZAP to complete a security scan. The results of the scan are attached to the project. Defects discovered have also been added to the attached defect report.
+I used OSAWP ZAP to complete a security scan. The results of the scan are attached to the project. The defects discovered have also been added to the attached defect report.
 
 Performance testing:
 -------------------
-As this is a shared live site I decided it would not be sensible to run load testing against the site.
-I did however run Lighthouse performance tests and have attached the results to this project.
+As this is a shared live site I decided it would not be sensible to run load testing against the site. As I do not have an NFRs I was also not realy in a position to know what load the site should be able to cope with. I did however run Lighthouse performance tests and have attached those results to this project.
 
 Defects:
 --------
-All defects discovered thus far in my testing have been consolidated in the attached Defect Report. 
+All defects discovered thus far in my testing have been consolidated in the attached Defect Report.
