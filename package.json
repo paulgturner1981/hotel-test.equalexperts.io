@@ -1,0 +1,25 @@
+{
+  "name": "ee",
+  "version": "1.0.0",
+  "description": "Testing Completed -----------------",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "cypress": "^3.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulgturner1981/hotel-test.equalexperts.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/paulgturner1981/hotel-test.equalexperts.io/issues"
+  },
+  "homepage": "https://github.com/paulgturner1981/hotel-test.equalexperts.io#readme"
+}

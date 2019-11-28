@@ -2,3 +2,4 @@ node_modules
 selenium-server.log
 reports
 .DS_Store
+examples

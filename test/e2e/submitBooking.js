@@ -14,7 +14,7 @@ module.exports = {
       .click('/html/body/div[1]/div[3]/div/div[7]/input')
       .pause(3000)
       .assert.containsText('/html/body', '2019-11-21')
-        .assert.containsText('/html/body', '2019-11-26')
+      .assert.containsText('/html/body', '2019-11-26')
       .saveScreenshot('submit-a-booking.png')
       .end();
   }
