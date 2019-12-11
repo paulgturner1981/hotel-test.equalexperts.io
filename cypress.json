@@ -1,4 +1,5 @@
 {
   "baseUrl": "http://hotel-test.equalexperts.io/",
-  "projectId": "1ugzwk"
+  "projectId": "1ugzwk",
+  "ExecTimeout": 10000
 }
