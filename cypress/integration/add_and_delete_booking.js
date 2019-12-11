@@ -27,7 +27,6 @@ describe('Add a booking', function() {
 
 describe('Deletes the booking', function() {
   it('Deletes a hotel booking', function() {
-    cy.visit('/');
     cy.get('#bookings > .row input[value*="Delete"]').last()
     	.click();
 	cy.contains('TEST000001').should('not.exist');

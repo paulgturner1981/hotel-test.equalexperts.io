@@ -5,10 +5,10 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "cypress": "^3.7.0"
   },
-  "devDependencies": {},
   "scripts": {
     "cypress:open": "cypress open"
   },
