@@ -9,14 +9,20 @@ describe('Attempt to make a booking with invalid dates', function() {
     	.type('999.99'); //Adds a price for the booking
     cy.get('#form #depositpaid')
     	.select('false'); //Selects the option for no deposit
-      cy.get('#form #checkin').click();
+      cy.get('#form #checkin')
+          .click();
       cy.get('.ui-datepicker-days-cell-over > .ui-state-default');
-    cy.get('.ui-datepicker-prev > .ui-icon').click();
-    cy.get(':nth-child(2) > :nth-child(3) > .ui-state-default').click(); //Opens the check-in datepicker and picks the 10th of the previous month
-    cy.get('#form #checkout').click();
+    cy.get('.ui-datepicker-prev > .ui-icon')
+        .click();
+    cy.get(':nth-child(2) > :nth-child(3) > .ui-state-default')
+        .click(); //Opens the check-in datepicker and picks the 10th of the previous month
+    cy.get('#form #checkout')
+        .click();
     cy.get('.ui-datepicker-days-cell-over > .ui-state-default');
-    cy.get(':nth-child(1) > :nth-child(1) > .ui-state-default').click(); //Opens the check-out datepicker and picks the 10th of the previous month
-    cy.get('#form > .row input').last().click(); // Clicks the Save button
+    cy.get(':nth-child(1) > :nth-child(1) > .ui-state-default')
+        .click(); //Opens the check-out datepicker and picks the 10th of the previous month
+    cy.get('#form > .row input').last()
+        .click(); // Clicks the Save button
       cy.wait(4000)
       cy.contains('DATE').should('not.exist');
     cy.contains('IN_THE_PAST').should('not.exist');

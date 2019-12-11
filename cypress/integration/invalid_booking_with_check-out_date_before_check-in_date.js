@@ -20,7 +20,7 @@ describe('Attempt to make a booking with invalid dates', function() {
     cy.get(':nth-child(1) > :nth-child(1) > .ui-state-default')
     	.click(); //Opens the check-out datepicker and picks a date prior to the check-in date (invalid)
     cy.get('#form > .row input').last()
-    	.click();
+    	.click(); // Clicks the Save button
     cy.wait(4000)
     cy.contains('CHECKOUT_DATE').should('not.exist');;
     cy.contains('BEFORE_CHECKIN_DATE').should('not.exist');;

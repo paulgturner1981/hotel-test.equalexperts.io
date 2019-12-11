@@ -2,23 +2,23 @@ describe('Add a booking', function() {
   it('Makes a hotel booking', function() {
     cy.visit('/');
     cy.get('#form #firstname')
-    	.type('TEST000001');
+    	.type('TEST000001'); //Adds a first name for the booking
     cy.get('#form #lastname')
-    	.type('BOOKING00001');
+    	.type('BOOKING00001'); //Adds a last name for the booking
     cy.get('#form #totalprice')
-    	.type('99.99');
+    	.type('99.99'); //Adds a price for the booking
     cy.get('#form #depositpaid')
-    	.select('false');
+    	.select('false'); //Selects the option for no deposit
     cy.get('#form #checkin')
     	.click();
     cy.get('.ui-datepicker-days-cell-over > .ui-state-default')
-    	.click();
+    	.click(); //Opens the check-in datepicker and picks a date
     cy.get('#form #checkout')
     	.click();
     cy.get('.ui-datepicker-days-cell-over > .ui-state-default')
-    	.click();
+    	.click(); //Opens the check-out datepicker and picks a date
     cy.get('#form > .row input').last()
-    	.click();
+    	.click(); // Clicks the Save button
     cy.contains('TEST000001');
     cy.contains('BOOKING00001');
     cy.contains('99.99');
