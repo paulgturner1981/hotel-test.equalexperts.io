@@ -22,6 +22,8 @@ Automated tests
 ----------------
 During my manual testing I did not raise any defects specific to a single browser. As such I felt that cross-browser automated testing in this particular use-case was not high priority. This led me to choose Cypress over Nightwatch to write my tests. There is one happy path test at the moment which creates a booking, checks it has been created, and then deletes that booking. Initially I had split this out into two separate tests, but as the data on the site is constantly changing (as others use it), I felt running both tests synchronously would provide a less brittle test as it would reduce the chance of someone deleting my booking.
 
+I have also added two tests to check it is not possible to add invalid bookings. One of them checks you cannot submit booking with dates in the past. The other checks you cannot submit a booking with a check-out date before the check-in date. At present both of these tests fail as there are open defects for both of these issues.
+
 In order to run the tests please ensure you have Cypress installed and clone the repo.
 
 Accessibility testing
