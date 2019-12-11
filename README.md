@@ -28,7 +28,7 @@ In order to run the tests please ensure you have Cypress installed and clone the
 
 Accessibility testing
 ----------------------
-I also completed manual testing of keyboard-tabbing and voiceover functionality. I then ran an "Axe" test, an "Accessibility Insights for Web" test, and a "Lighthouse" accessibiilty test. The defects foind as a result of this testing are included in the defect report.
+I also completed manual testing of keyboard-tabbing and voiceover functionality. I then ran an "Axe" test, an "Accessibility Insights for Web" test, and a "Lighthouse" accessibiilty test. The defects found as a result of this testing are included in the defect report.
 
 API testing
 -----------
